@@ -4,7 +4,16 @@ package triangle
 func Triangle(level int) string {
 	var result string
 	for row := 1; row <= level; row++ {
-		result += "*"
+		for col := 1; col <= level; col++ {
+			if col <= row {
+				result += "*"
+				continue
+			}
+			result += " "
+		}
+		if row < level {
+			result += "\n"
+		}
 	}
 	return result
 }
