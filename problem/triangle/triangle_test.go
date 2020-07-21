@@ -42,3 +42,5 @@ func TestTriangle(t *testing.T) {
 		})
 	}
 }
+
+func TestPrint(t *testing.T) {}
