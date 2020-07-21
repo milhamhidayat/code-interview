@@ -2,12 +2,19 @@ package fliptriangle
 
 // FlipTriangle return flip triangle based on level
 func FlipTriangle(level int) string {
-	if level == 5 {
-		return "    *\n   **\n  ***\n ****\n*****"
-	}
+	var result string
 
-	if level == 3 {
-		return "  *\n **\n***"
+	for row := 1; row <= level; row++ {
+		for col := level; col >= 1; col-- {
+			if col > row {
+				result += " "
+				continue
+			}
+			result += "*"
+		}
+		if row < level {
+			result += "\n"
+		}
 	}
-	return "*"
+	return result
 }
