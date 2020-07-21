@@ -1,4 +1,4 @@
-package flipTriangle_test
+package fliptriangle_test
 
 import (
 	"testing"

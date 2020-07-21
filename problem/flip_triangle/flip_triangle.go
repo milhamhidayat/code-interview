@@ -1,4 +1,4 @@
-package flipTriangle
+package fliptriangle
 
 // FlipTriangle return flip triangle based on level
 func FlipTriangle(level int) string {
