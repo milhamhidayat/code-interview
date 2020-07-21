@@ -7,7 +7,6 @@ func Triangle(level int) string {
 		for col := 1; col <= row; col++ {
 			if col <= row {
 				result += "*"
-				continue
 			}
 		}
 		if row < level {
