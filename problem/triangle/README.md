@@ -1,4 +1,4 @@
-# Triangle1
+# Triangle
 
 Tulis sebuah function dimana menerima input angka N positif. Function akan print segitiga dengan N level menggunakan karakter *. Pastikan pada bagian kanan segitiga memiliki space kosong.
 
