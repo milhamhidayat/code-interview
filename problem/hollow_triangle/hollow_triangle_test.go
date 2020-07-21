@@ -17,6 +17,10 @@ func TestHollowTriangle(t *testing.T) {
 			level:  1,
 			result: "*",
 		},
+		"level5": {
+			level:  5,
+			result: "*\n**\n* *\n*  *\n*****",
+		},
 	}
 
 	for testName, test := range tests {
