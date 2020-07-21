@@ -4,14 +4,14 @@ Tulis sebuah function dimana menerima input angka N positif. Function akan print
 
 Contoh:
 
-```
+```sh
 Level 2
 
 '* '
 '**'
 ```
 
-```
+```sh
 Level 3
 
 '*  '
@@ -19,7 +19,7 @@ Level 3
 '***'
 ```
 
-```
+```sh
 Level 5
 
 '*    '
