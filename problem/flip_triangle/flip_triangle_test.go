@@ -17,6 +17,10 @@ func TestFlipTriangle(t *testing.T) {
 			level:  1,
 			result: "*",
 		},
+		"level3": {
+			level:  3,
+			result: "  *\n **\n***",
+		},
 	}
 
 	for testName, test := range tests {
