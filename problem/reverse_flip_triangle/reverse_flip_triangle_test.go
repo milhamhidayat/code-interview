@@ -19,11 +19,11 @@ func TestReverseFlipTriangle(t *testing.T) {
 		},
 		"level3": {
 			level:  3,
-			result: "***\n**\n*",
+			result: "***\n **\n  *",
 		},
 		"level5": {
 			level:  5,
-			result: "*****\n****\n***\n**\n*",
+			result: "*****\n ****\n  ***\n   **\n    *",
 		},
 	}
 
