@@ -29,6 +29,10 @@ func TestTriangle(t *testing.T) {
 			level:  4,
 			result: "*   \n**  \n*** \n****",
 		},
+		"level5": {
+			level:  5,
+			result: "*    \n**   \n***  \n**** \n*****",
+		},
 	}
 
 	for testName, test := range tests {
