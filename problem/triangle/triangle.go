@@ -9,7 +9,6 @@ func Triangle(level int) string {
 				result += "*"
 				continue
 			}
-			result += " "
 		}
 		if row < level {
 			result += "\n"

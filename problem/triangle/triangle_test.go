@@ -19,19 +19,19 @@ func TestTriangle(t *testing.T) {
 		},
 		"level2": {
 			level:  2,
-			result: "* \n**",
+			result: "*\n**",
 		},
 		"level3": {
 			level:  3,
-			result: "*  \n** \n***",
+			result: "*\n**\n***",
 		},
 		"level4": {
 			level:  4,
-			result: "*   \n**  \n*** \n****",
+			result: "*\n**\n***\n****",
 		},
 		"level5": {
 			level:  5,
-			result: "*    \n**   \n***  \n**** \n*****",
+			result: "*\n**\n***\n****\n*****",
 		},
 	}
 
@@ -49,6 +49,9 @@ func TestPrint(t *testing.T) {
 	}{
 		"level1": {
 			level: 1,
+		},
+		"level2": {
+			level: 2,
 		},
 	}
 
