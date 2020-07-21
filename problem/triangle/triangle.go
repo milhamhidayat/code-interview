@@ -18,7 +18,7 @@ func Triangle(level int) string {
 	return result
 }
 
-// only  print the triangle
-func triangle(level int) {
+// Print will print the triangle based on level
+func Print(level int) {
 
 }
