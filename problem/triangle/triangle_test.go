@@ -43,4 +43,18 @@ func TestTriangle(t *testing.T) {
 	}
 }
 
-func TestPrint(t *testing.T) {}
+func TestPrint(t *testing.T) {
+	tests := map[string]struct {
+		level int
+	}{
+		"level1": {
+			level: 1,
+		},
+	}
+
+	for testName, test := range tests {
+		t.Run(testName, func(t *testing.T) {
+			tr.Print(test.level)
+		})
+	}
+}
