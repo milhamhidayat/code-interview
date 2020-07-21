@@ -59,6 +59,9 @@ func TestPrint(t *testing.T) {
 		"level4": {
 			level: 4,
 		},
+		"level5": {
+			level: 5,
+		},
 	}
 
 	for testName, test := range tests {
