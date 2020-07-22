@@ -17,6 +17,10 @@ func TestDecimalToBinary(t *testing.T) {
 			num:    3,
 			result: "11",
 		},
+		"5 should convert to 101": {
+			num:    5,
+			result: "101",
+		},
 	}
 
 	for testName, test := range tests {
