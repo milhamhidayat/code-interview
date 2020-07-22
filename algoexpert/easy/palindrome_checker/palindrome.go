@@ -10,9 +10,14 @@ func IsPalindrome1(word string) bool {
 }
 
 // IsPalindrome2 is optimized version of IsPalindrome2
+// O(n) time -> karena loop dari awal string sampai akhir string
+// O(1) space -> karena simpan data hanya untuk variable ptr
 func IsPalindrome2(word string) bool {
 	for i := 0; i < len(word); i++ {
 		ptr := len(word) - 1 - i
+		if i == ptr {
+			return true
+		}
 		if word[i] != word[ptr] {
 			return false
 		}
