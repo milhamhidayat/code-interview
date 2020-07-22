@@ -11,9 +11,6 @@ Output: 11
 Input: 5
 Output: 101
 
-Input: 5
-Output: 110
-
 Input: 9
 Output: 1001
 ```
