@@ -13,9 +13,13 @@ func TestStringReversal(t *testing.T) {
 		word   string
 		result string
 	}{
-		"sonic": {
+		"convert sonic to cinos": {
 			word:   "sonic",
 			result: "cinos",
+		},
+		"convert amazon to nozama": {
+			word:   "amazon",
+			result: "nozama",
 		},
 	}
 
