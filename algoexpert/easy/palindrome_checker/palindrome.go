@@ -8,3 +8,6 @@ func IsPalindrome1(word string) bool {
 	}
 	return word == newWord
 }
+
+// IsPalindrome2 is optimized version of IsPalindrome2
+func IsPalindrome2(word string) bool {}
