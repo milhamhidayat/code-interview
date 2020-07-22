@@ -1,22 +1,23 @@
 package program
 
-import (
-	"reflect"
-)
+import "sort"
 
 // TwoNumberSum return slice with value sum up to the target sum
 func TwoNumberSum(data []int, target int) []int {
-	if reflect.DeepEqual(data, []int{4, 6, 1, -3}) && target == 3 {
-		return []int{}
+	result := []int{}
+
+	if len(data) == 1 {
+		return result
 	}
 
-	if reflect.DeepEqual(data, []int{15}) && target == 15 {
-		return []int{}
+	for i := 0; i < len(data); i++ {
+		for j := i + 1; j < len(data); j++ {
+			sum := data[i] + data[j]
+			if sum == target {
+				result = append(result, data[i], data[j])
+			}
+		}
 	}
-
-	if reflect.DeepEqual(data, []int{14}) && target == 15 {
-		return []int{}
-	}
-
-	return []int{4, 6}
+	sort.Sort(sort.IntSlice(result))
+	return result
 }

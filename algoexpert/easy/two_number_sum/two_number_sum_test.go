@@ -19,10 +19,10 @@ func TestTwoNumberSum(t *testing.T) {
 			target: 10,
 			result: []int{4, 6},
 		},
-		"[4,6,1,-3] target 3 return []": {
+		"[4,6,1,-3] target 3 return [-3,6]": {
 			data:   []int{4, 6, 1, -3},
 			target: 3,
-			result: []int{},
+			result: []int{-3, 6},
 		},
 		"[14] target 15 return []": {
 			data:   []int{14},
