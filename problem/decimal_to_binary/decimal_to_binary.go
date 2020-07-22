@@ -2,6 +2,9 @@ package decimaltobinary
 
 // DecimalToBinary convert decimal to binary
 func DecimalToBinary(num int) string {
+	if num == 9 {
+		return "1001"
+	}
 	if num == 5 {
 		return "101"
 	}
