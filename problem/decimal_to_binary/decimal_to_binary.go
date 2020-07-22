@@ -1,12 +1,16 @@
 package decimaltobinary
 
+import "strconv"
+
 // DecimalToBinary convert decimal to binary
 func DecimalToBinary(num int) string {
-	if num == 9 {
-		return "1001"
+	var result string
+	for num > 0 {
+		newNum := num / 2
+		mod := num % 2
+		result += strconv.Itoa(mod)
+		num = newNum
 	}
-	if num == 5 {
-		return "101"
-	}
-	return "11"
+
+	return result
 }
