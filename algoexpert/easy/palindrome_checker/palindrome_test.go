@@ -21,6 +21,10 @@ func TestPalindrome(t *testing.T) {
 			word:   "level",
 			result: true,
 		},
+		"example is not a palindrome": {
+			word:   "example",
+			result: false,
+		},
 	}
 
 	for testName, test := range tests {
