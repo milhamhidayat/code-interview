@@ -60,6 +60,10 @@ func TestPalindrome2(t *testing.T) {
 			word:   "a",
 			result: true,
 		},
+		"noon is a palindrome": {
+			word:   "noon",
+			result: true,
+		},
 	}
 
 	for testName, test := range tests {

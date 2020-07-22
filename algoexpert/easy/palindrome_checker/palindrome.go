@@ -10,4 +10,14 @@ func IsPalindrome1(word string) bool {
 }
 
 // IsPalindrome2 is optimized version of IsPalindrome2
-func IsPalindrome2(word string) bool {}
+func IsPalindrome2(word string) bool {
+	for i := 0; i < len(word); i++ {
+		ptr := len(word) - 1 - i
+		if string(word[i]) == string(word[ptr]) {
+			continue
+		}
+		return false
+	}
+
+	return true
+}
