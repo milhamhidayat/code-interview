@@ -2,7 +2,7 @@
 
 Tulis sebuah function menerima input array dengan tiap value berbeda dan angka yang merupakan target penjumlahan. Jika ada 2 angka berbeda dalam array ketika dijumlahkan nilai sama dengan target penjumlahan, function mengembalikan angka tersebut dalam array.
 
-Target penjumlahan didapatkan dengan cara menjumlahkan 2 angaka berbeda dalam array.
+Target penjumlahan didapatkan dengan cara menjumlahkan 2 angka berbeda dalam array.
 
 Contoh:
 
