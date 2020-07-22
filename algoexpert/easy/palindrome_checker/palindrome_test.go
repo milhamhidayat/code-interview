@@ -8,7 +8,7 @@ import (
 	pc "code-interview/algoexpert/easy/palindrome_checker"
 )
 
-func TestPalindrome(t *testing.T) {
+func TestPalindrome1(t *testing.T) {
 	tests := map[string]struct {
 		word   string
 		result bool
