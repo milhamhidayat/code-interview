@@ -12,12 +12,8 @@ func BinarySearch(data []int, target int) int {
 		}
 		if target < data[middleIdx] {
 			rightIdx = middleIdx - 1
-			continue
-		}
-
-		if target > data[middleIdx] {
+		} else if target > data[middleIdx] {
 			leftIdx = middleIdx + 1
-			continue
 		}
 	}
 
