@@ -24,6 +24,11 @@ func TestBinarySearch(t *testing.T) {
 			num:    120,
 			result: -1,
 		},
+		"[0, 1, 21, 33, 45, 45, 61, 71, 72, 73] num 72 should return 8": {
+			data:   []int{0, 1, 21, 33, 45, 45, 61, 71, 72, 73},
+			num:    72,
+			result: 8,
+		},
 	}
 
 	for testName, test := range tests {
