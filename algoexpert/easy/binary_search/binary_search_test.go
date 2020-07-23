@@ -19,6 +19,11 @@ func TestBinarySearch(t *testing.T) {
 			num:    111,
 			result: 3,
 		},
+		"[1, 5, 23, 111] num 120 should return -1": {
+			data:   []int{1, 5, 23, 111},
+			num:    111,
+			result: -1,
+		},
 	}
 
 	for testName, test := range tests {
