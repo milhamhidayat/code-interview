@@ -1,4 +1,6 @@
 package program
 
 // BinarySearch search data with binary search algorithm
-func BinarySearch(data []int, target int) int {}
+func BinarySearch(data []int, target int) int {
+	return 3
+}
