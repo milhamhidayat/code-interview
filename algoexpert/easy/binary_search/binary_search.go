@@ -1,17 +1,25 @@
 package program
 
-import (
-	"reflect"
-)
-
 // BinarySearch search data with binary search algorithm
 func BinarySearch(data []int, target int) int {
-	if reflect.DeepEqual(data, []int{0, 1, 21, 33, 45, 45, 61, 71, 72, 73}) && target == 72 {
-		return 8
+	leftIdx := 0
+	rightIdx := len(data) - 1
+
+	for leftIdx <= rightIdx {
+		middleIdx := (leftIdx + rightIdx) / 2
+		if target == data[middleIdx] {
+			return middleIdx
+		}
+		if target < data[middleIdx] {
+			rightIdx = middleIdx - 1
+			continue
+		}
+
+		if target > data[middleIdx] {
+			leftIdx = middleIdx + 1
+			continue
+		}
 	}
 
-	if reflect.DeepEqual(data, []int{1, 5, 23, 111}) && target == 120 {
-		return -1
-	}
-	return 3
+	return -1
 }
