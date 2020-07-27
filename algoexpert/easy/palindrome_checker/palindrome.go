@@ -13,8 +13,9 @@ func IsPalindrome1(word string) bool {
 // O(n) time -> karena loop dari awal string sampai akhir string
 // O(1) space -> karena simpan data hanya untuk variable ptr
 func IsPalindrome2(word string) bool {
-	for i := 0; i < len(word); i++ {
-		ptr := len(word) - 1 - i
+	length := len(word) - 1
+	for i := 0; i <= length; i++ {
+		ptr := length - i
 		if word[i] != word[ptr] {
 			return false
 		}
