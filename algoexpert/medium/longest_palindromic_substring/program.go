@@ -28,3 +28,42 @@ func isPalindrome(word string) bool {
 
 	return true
 }
+
+// LongestPalindromicSubstring2 return longest palindrome sub string
+func LongestPalindromicSubstring2(word string) string {
+	longest := word[:1]
+
+	for i := 1; i < len(word); i++ {
+		tmpLongest := ""
+		// odd palindrome
+		odd := check(word, i-1, i+1)
+
+		// even palindrome
+		even := check(word, i-1, i)
+
+		if len(odd) > len(even) {
+			tmpLongest = odd
+		} else {
+			tmpLongest = even
+		}
+
+		if len(tmpLongest) > len(longest) {
+			longest = tmpLongest
+		}
+	}
+
+	return longest
+}
+
+func check(word string, start, end int) string {
+	for start >= 0 && end < len(word) {
+		if word[start] != word[end] {
+			break
+		}
+
+		start--
+		end++
+	}
+
+	return word[start+1 : end]
+}

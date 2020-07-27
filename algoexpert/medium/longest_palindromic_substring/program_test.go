@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func TestLongestPalindromicSubstring(t *testing.T) {
+func TestLongestPalindromicSubstring1(t *testing.T) {
 	tests := map[string]struct {
 		word   string
 		result string
@@ -34,6 +34,37 @@ func TestLongestPalindromicSubstring(t *testing.T) {
 	for testName, test := range tests {
 		t.Run(testName, func(t *testing.T) {
 			res := p.LongestPalindromicSubstring1(test.word)
+			require.Equal(t, test.result, res)
+		})
+	}
+}
+
+func TestLongestPalindromicSubstring2(t *testing.T) {
+	tests := map[string]struct {
+		word   string
+		result string
+	}{
+		"cbbd should return bb": {
+			word:   "cbbd",
+			result: "bb",
+		},
+		"abaxyzzyxf should return xyzzyx": {
+			word:   "abaxyzzyxf",
+			result: "xyzzyx",
+		},
+		"a should return a": {
+			word:   "a",
+			result: "a",
+		},
+		"bbc should return bb": {
+			word:   "bbc",
+			result: "bb",
+		},
+	}
+
+	for testName, test := range tests {
+		t.Run(testName, func(t *testing.T) {
+			res := p.LongestPalindromicSubstring2(test.word)
 			require.Equal(t, test.result, res)
 		})
 	}
