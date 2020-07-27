@@ -17,6 +17,14 @@ func TestFindThreeLargestNumbers(t *testing.T) {
 			data:   []int{5, 1, 7, 3, 4},
 			result: []int{4, 5, 7},
 		},
+		"[8,8,8,8,8,8,8,8] should return [8,8,8]": {
+			data:   []int{8, 8, 8, 8, 8, 8, 8, 8},
+			result: []int{8, 8, 8},
+		},
+		"[8,8,9,8,8,8] should return [8,8,9]": {
+			data:   []int{8, 8, 9, 8, 8, 8},
+			result: []int{8, 8, 9},
+		},
 	}
 
 	for testName, test := range tests {
@@ -25,5 +33,4 @@ func TestFindThreeLargestNumbers(t *testing.T) {
 			require.Equal(t, test.result, res)
 		})
 	}
-
 }
