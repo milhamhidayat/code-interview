@@ -17,7 +17,7 @@ input = "azradarufg"
 output = "radar"
 
 input = "a"
-output = a
+output = "a"
 
 input = "abcdefg"
 output = ""
