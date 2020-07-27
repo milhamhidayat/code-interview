@@ -17,6 +17,14 @@ func TestMaxChars(t *testing.T) {
 			word:   "abbcccccc",
 			result: "c",
 		},
+		"x should return x": {
+			word:   "x",
+			result: "x",
+		},
+		"apple11231231 should return 1": {
+			word:   "apple11231231",
+			result: "1",
+		},
 	}
 
 	for testName, test := range tests {
