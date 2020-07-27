@@ -3,6 +3,8 @@ package program_test
 import (
 	"testing"
 
+	p "code-interview/problem/matrix_spiral"
+
 	"github.com/stretchr/testify/require"
 )
 
@@ -22,7 +24,7 @@ func TestMatrixSpiral(t *testing.T) {
 
 	for testName, test := range tests {
 		t.Run(testName, func(t *testing.T) {
-			res := p.MatrixSprial(test.num)
+			res := p.MatrixSpiral(test.num)
 			require.Equal(t, test.res, res)
 		})
 	}
