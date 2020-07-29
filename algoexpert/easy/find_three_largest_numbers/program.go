@@ -5,6 +5,7 @@ import (
 )
 
 // FindThreeLargestNumbers returns sorted array with 3 maximum value
+// O (n) time | O (1) space
 func FindThreeLargestNumbers(data []int) []int {
 	result := []int{math.MinInt8, math.MinInt8, math.MinInt8}
 

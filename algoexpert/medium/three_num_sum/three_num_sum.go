@@ -5,6 +5,8 @@ import (
 )
 
 // ThreeNumSum return triplet slice value equal with target
+// Time Complexity O (n ^ 3)
+// Space complexity O (1)
 func ThreeNumSum(data []int, target int) [][]int {
 	sort.Ints(data)
 	result := [][]int{}
