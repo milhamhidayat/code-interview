@@ -27,3 +27,33 @@ func ThreeNumSum(data []int, target int) [][]int {
 
 	return result
 }
+
+// ThreeNumSum2 is optimized version of ThreeNumSum1
+// Time Complexity O(n ^ 2) -> loop 2 kali
+// Space Complexity O (n) -> worst case insert semua value array
+func ThreeNumSum2(data []int, target int) [][]int {
+	sort.Ints(data)
+
+	result := [][]int{}
+	lenData := len(data)
+
+	for i := 0; i < len(data)-1; i++ {
+		left := i + 1
+		right := lenData - 1
+
+		for left < right {
+			sum := data[i] + data[left] + data[right]
+
+			if sum == target {
+				result = append(result, []int{data[i], data[left], data[right]})
+				left++
+				right--
+			} else if sum > target {
+				right--
+			} else if sum < target {
+				left++
+			}
+		}
+	}
+	return result
+}
