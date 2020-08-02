@@ -3,6 +3,8 @@ package program_test
 import (
 	"testing"
 
+	p "code-interview/algoexpert/medium/kadane_algorithm"
+
 	"github.com/stretchr/testify/require"
 )
 
