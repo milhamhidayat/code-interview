@@ -39,7 +39,7 @@ func TestThreeNumSum(t *testing.T) {
 			data:   []int{1, -4, 5, 2},
 			target: -1,
 			result: [][]int{
-				[]int{-4, 1, 2},
+				{-4, 1, 2},
 			},
 		},
 	}
@@ -83,7 +83,7 @@ func TestThreeNumSum2(t *testing.T) {
 			data:   []int{1, -4, 5, 2},
 			target: -1,
 			result: [][]int{
-				[]int{-4, 1, 2},
+				{-4, 1, 2},
 			},
 		},
 	}
