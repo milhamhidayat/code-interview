@@ -27,3 +27,17 @@ func max(x, y int) int {
 	}
 	return y
 }
+
+// KadaneAlgorithm2 optimized version of v1
+// Time complexity -> O (n)
+// Space complexity -> O(1)
+func KadaneAlgorithm2(data []int) int {
+	tmpMax := data[0]
+	finalMax := data[0]
+
+	for i := 1; i < len(data); i++ {
+		tmpMax = max(data[i], tmpMax+data[i])
+		finalMax = max(finalMax, tmpMax)
+	}
+	return finalMax
+}
