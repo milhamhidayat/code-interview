@@ -1,7 +1,9 @@
-package program
+package program_test
 
 import (
 	"testing"
+
+	p "code-interview/problem/fibonacci"
 
 	"github.com/stretchr/testify/require"
 )
@@ -19,7 +21,7 @@ func TestFibonacci(t *testing.T) {
 
 	for testName, test := range tests {
 		t.Run(testName, func(t *testing.T) {
-			require.Equal(t, test.result, p.Fibonacci())
+			require.Equal(t, test.result, p.Fibonacci(test.input))
 		})
 	}
 }
