@@ -17,6 +17,22 @@ func TestFibonacci(t *testing.T) {
 			input:  1,
 			result: 1,
 		},
+		"2 should return 1": {
+			input:  2,
+			result: 1,
+		},
+		"3 should return 2": {
+			input:  3,
+			result: 2,
+		},
+		"5 should return 5": {
+			input:  5,
+			result: 5,
+		},
+		"6 should return 8": {
+			input:  6,
+			result: 8,
+		},
 	}
 
 	for testName, test := range tests {
